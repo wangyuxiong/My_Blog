@@ -1,0 +1,17 @@
+{% extends 'css3two_blog/blog_base.html' %}
+{% load static %}
+
+
+{% block pagecss %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css3two_blog/css/gfm.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css3two_blog/css/article.css' %}" />
+{% endblock pagecss %}
+
+{% block content %}
+  {% autoescape off %}
+    <article>
+      {{ talks.display_html }}
+    </article>
+  {% endautoescape %}
+
+{% endblock content %}
