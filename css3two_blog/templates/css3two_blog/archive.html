@@ -13,19 +13,23 @@
   {% for category, posts_by_year in data %}
     <article role="article">
       <header id="category">
-        <h1 class="entry-title">
+        <h2 class="entry-title">
           {% if category == "programming" %}
             Programming
-          {% elif category == "acg" %}
-            Anime & Manga & Novel & Game
+          {% elif category == "work" %}
+            Working
+          {% elif category == "life" %}
+            Life
+          {% elif category == "read" %}
+            Read
           {% else %}
             No Category
           {% endif %}
-        </h1>
+        </h2>
       </header>
       <div id="blog-archives">
         {% for year, blogposts in posts_by_year %}
-          <h2>{{year}}</h2>
+          <h3>{{year}}</h3>
           {% for blogpost in blogposts %}
             <article>
               <h1>
