@@ -47,7 +47,9 @@ def archive(request):
 
     args['data'] = [
         ('programming', get_sorted_posts(category="programming")),
-        ('acg', get_sorted_posts(category="acg")),
+        ('work', get_sorted_posts(category="work")),
+        ('life', get_sorted_posts(category="life")),
+        ('read', get_sorted_posts(category="read")),
         ('nc', get_sorted_posts(category="nc")),  # no category
     ]
 
