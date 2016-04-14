@@ -2,9 +2,11 @@
 {% load static %}
 <html>
 <head>
-  <title>laike9m's blog</title>
-  <meta name="description" content="laike9m's blog" />
-  <link rel="shortcut icon" type="image/x-icon" href="{% static 'css3two_blog/images/thumbnail_s.png' %}" media="screen" />
+  {% block head %}
+    <title>metaboy's blog</title>
+    <meta name="description" content="分享关于技术，生活，ACG的点滴">
+  {% endblock head %}
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'css3two_blog/images/favicon2.ico' %}"/>
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" type="text/css" href="{% static 'css3two_blog/css/style.css' %}" />
@@ -13,17 +15,29 @@
   {% block pagecss %}
     <!-- cause I want to put css at top  -->
   {% endblock pagecss %}
+  <!-- Google Analytics -->
+  <script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-69544114-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <script async src='//www.google-analytics.com/analytics.js'></script>
+  <!-- End Google Analytics -->
 </head>
 
 <body>
   <div id="main" style="position: relative;">
-    <a href="https://github.com/laike9m"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    <a href="https://github.com/wangyuxiong">
+      <img style="position: absolute; top: 0; right: 0; border: 0;"
+           src="{% static 'css3two_blog/images/forkme.png' %}"
+           alt="Fork me on GitHub">
+    </a>
     <header>
       <div id="logo">
         <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h2><a href="/blog">@行知-<span class="logo_colour"></span></a></h2>
-          <h3>关注大数据，分布式系统</h3>
+          <h1><a href="/blog">metaboy's<span class="logo_colour"> blog</span></a></h1>
+          <h2>知行合一</h2>
         </div>
       </div>
       <nav>
@@ -57,50 +71,51 @@
         <div class="sidebar">
           <div class="bio" data-twttr-id="twttr-sandbox-0">
             <div class="illustration">
-              <img src="/static/css3two_blog/images/thumbnail.jpg" width=150px alt="laike9m">
+              <img src="/static/css3two_blog/images/thumbnail.png" alt="laike9m">
+              <h2 id="hi">Hi, I'm metaboy</h2>
             </div>
-            <h2>Hi, I'm laike9m</h2>
             <div class="clear"></div>
+{#            <p>#}
+{#              Graduate student of#}
+{#              <a href="http://english.ict.cas.cn/">ICT</a>#}
+{#              , <strong>free Software developer</strong>#}
+{#              , <strong>nijikon</strong>, crazy <strong>Atlético Madrid supporter</strong>#}
+{#            </p>#}
             <p>
-              Graduate student of
-              <a href="http://english.ict.cas.cn/">
-              <strong>Institute of Computing Technology Chinese Academy of Sciences</strong>
-              </a>
-              , <strong>free Software developer</strong>
-              , <strong>nijikon</strong>, crazy <strong>Atlético Madrid supporter</strong>
+              I code in Python, Java, JavaScript/Node.js. I'm learning golang.
             </p>
-            <p>
-              Mainly use <strong><a href="http://python.org">Python</a></strong>
-              for my own projects (including <em>this <strong>Django</strong> site</em>),
-              and C++ for work. Trying to master Javascript.
-            </p>
+            <!-- StackExchange User Flair http://stackoverflow.com/users/flair -->
+            <a href="http://stackoverflow.com/users/2142577/laike9m" target="_blank">
+              <img src="https://stackoverflow.com/users/flair/2142577.png" width="208" height="58"
+                   alt="profile for laike9m on Stack Exchange, a network of free, community-driven Q&amp;A sites"
+                   title="profile for laike9m on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+            </a>
+            <!--https://github.com/lepture/github-cards -->
+{#            <div class="github-card" data-user="laike9m" data-target="blank"></div>#}
+{#            <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>#}
             <div id="social-logos">
-              <a href="mailto:laike9m@gmail.com" target="_blank">
+              <a href="mailto:yxiong.wang@gmail.com" target="_blank">
                 <img src="{% static 'css3two_blog/images/webicon-mail-m.png' %}" alt="E-mail">
               </a>
-              <a href="http://laike9m.com/blog/rss" title="my feed" target="_blank">
+              <a href="http://wangyuxiong.com/blog/rss" title="my feed" target="_blank">
                 <img src="{% static 'css3two_blog/images/webicon-rss-m.png' %}" alt="RSS feed">
               </a>
-              <a href="https://github.com/laike9m" title="laike9m on GitHub" target="_blank">
+              <a href="https://github.com/wangyuxiong" title="metaboy on GitHub" target="_blank">
                 <img src="{% static 'css3two_blog/images/webicon-github-m.png' %}" alt="GitHub logo">
               </a>
-              <a href="http://stackoverflow.com/users/2142577/laike9m" title="laike9m on stackoverflow" target="_blank">
+              <a href="http://stackoverflow.com/users/2142577/laike9m" title="metaboy on stackoverflow" target="_blank">
                 <img src="{% static 'css3two_blog/images/webicon-stackoverflow-m.png' %}" alt="GitHub logo">
               </a>
-              <a href="https://twitter.com/laike9m" title="laike9m on Twitter" target="_blank">
+              <a href="https://twitter.com/laike9m" title="metaboy on Twitter" target="_blank">
                 <img src="{% static 'css3two_blog/images/webicon-twitter-m.png' %}" alt="Twitter logo">
               </a>
-              <a href="https://plus.google.com/u/0/+Yaolaike9mZuo/posts" title="laike9m on Google+" target="_blank">
+              <a href="https://plus.google.com/u/0/+Yaolaike9mZuo/posts" title="metaboy on Google+" target="_blank">
                 <img src="{% static 'css3two_blog/images/webicon-googleplus-m.png' %}" alt="Google+ logo">
               </a>
-              <a href="http://www.linkedin.com/profile/view?id=242350350" title="laike9m on LinkedIn" target="_blank">
+              <a href="http://www.linkedin.com/profile/view?id=242350350" title="metaboy on LinkedIn" target="_blank">
                 <img src="{% static 'css3two_blog/images/webicon-linkedin-m.png' %}" alt="LinkedIn logo">
               </a>
             </div>
-            <!-- StackExchange User Flair http://stackoverflow.com/users/flair -->
-            <a href="http://stackoverflow.com/users/2142577/laike9m" target="_blank">
-              <img src="http://stackoverflow.com/users/flair/2142577.png" width="208" height="58" alt="profile for laike9m on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for laike9m on Stack Exchange, a network of free, community-driven Q&amp;A sites">
-            </a>
             <div style="margin-top: 15px">
               <!-- Begin MailChimp Signup Form -->
               <style type="text/css">
@@ -127,7 +142,7 @@
               </style>
               <!--<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">-->
               <div id="mc_embed_signup">
-              <form action="http://laike9m.us3.list-manage.com/subscribe/post?u=292026f5547a0cbd3ec8e9f6d&amp;id=416f7bcbc7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <form action="//laike9m.us3.list-manage.com/subscribe/post?u=292026f5547a0cbd3ec8e9f6d&amp;id=416f7bcbc7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <label for="mce-EMAIL">
                   Sign up for laike9m.com email newsletter
                   <span style="font-size: 1px">(limit to tech-related articles)</span>
@@ -152,6 +167,24 @@
               <p>
                 <a href="http://lilydjwg.is-programmer.com/" target="_blank">依云's Blog</a>
               </p>
+              <p>
+                <a href="http://zhangxiaoyang.me/" target="_blank">zhangxiaoyang.me</a>
+              </p>
+              <p>
+                <a href="http://blog.wuxianbin.cn/" target="_blank">Happybin's Blog</a>
+              </p>
+              <p>
+                <a href="http://www.tianjun.ml/" target="_blank">Tian Jun</a>
+              </p>
+              <p>
+                <a href="http://richardzhang.info/" target="_blank">理查德</a>
+              </p>
+              <p>
+                <a href="http://bambooom.github.io/" target="_blank">Bambooom</a>
+              </p>
+              <p>
+                <a href="http://proupy.com/" target="_blank">singpenguin</a>
+              </p>
             </div>
           </div>
         <!-- end about me -->
@@ -161,13 +194,22 @@
     </div>
 
     <div id="scroll">
-      <a title="Scroll to the top" class="top" href="#"><img src="{% static 'css3two_blog/images/top.png' %}" alt="top" /></a>
+      <a title="Scroll to the top" class="top" href="#">
+        <img src="{% static 'css3two_blog/images/top.png' %}" alt="top" />
+      </a>
     </div>
     <footer id="site-footer" style="padding-bottom: 20px">
-      <p><a href="/">Home</a> | <a href="/blog/archive">Archives</a> | <a href="/blog/about">About</a> | <a href="">Projects</a> | <a href="/blog/contact">Contact</a></p>
       <p>
-        <a href="https://github.com/laike9m/My_Blog">SourceCode @ Github</a> |
-        <a href="https://www.webfaction.com/?aid=49199">Hosted on Webfaction</a> |
+        <a href="/">Home</a> |
+        <a href="/blog/archive">Archives</a> |
+        <a href="/blog/about">About</a> |
+        <a href="">Projects</a> |
+        <a href="/blog/contact">Contact
+        </a>
+      </p>
+      <p>
+        <a href="https://github.com/laike9m/My_Blog">SourceCode@Github</a> |
+        <a href="https://www.digitalocean.com/?refcode=a582fa751343">Hosted on DigitalOcean</a> |
         <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a>
       </p>
     </footer>
@@ -179,15 +221,16 @@
   <script type="text/javascript" src="{% static 'css3two_blog/js/jquery.easing-sooper.js' %}"></script>
   <script type="text/javascript" src="{% static 'css3two_blog/js/jquery.sooperfish.js' %}"></script>
   <script type="text/javascript">
+    var sidebar = $('.toggle-sidebar');
     $(document).ready(function() {
       $('ul.sf-menu').sooperfish();
       $('.top').click(function() {$('html, body').animate({scrollTop: 0}, 1000); return false;});
     });
     $(window).load(function(){  // run this only after the entire page has loaded to get real height
         var toggle_height = $(".content").prop('scrollHeight') + 13.7;
-        $('.toggle-sidebar').css("height", toggle_height);
+        sidebar.css("height", toggle_height);
     });
-    $('.toggle-sidebar').hover( // use jquery-ui
+    sidebar.hover( // use jquery-ui
         function(){
             $(this).animate({ backgroundColor: '#EBEBEB' }, 10);
         },
@@ -208,7 +251,7 @@
             });
         });
     };
-    $('.toggle-sidebar').clicktoggle(
+    sidebar.clicktoggle(
         function(){
             $('.content_container').css("margin-right", "11px");
             $(this).css("width", "19px");
@@ -220,18 +263,6 @@
             $('span.toggle-sidebar').removeClass('alignright');
         }
     );
-  </script>
-  <!-- Clicky tracking code  -->
-  <script type="text/javascript">
-    var clicky_site_ids = clicky_site_ids || [];
-    clicky_site_ids.push(100698577);
-    (function() {
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = '//static.getclicky.com/js';
-        ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
-    })();
   </script>
 </body>
 </html>

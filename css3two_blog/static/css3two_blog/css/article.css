@@ -10,25 +10,9 @@
 }
 
 @font-face {
-    font-family: 'lato';
-    src: url('../fonts/lato-reg-webfont.eot');
-    src: url('../fonts/lato-reg-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/lato-reg-webfont.woff') format('woff'),
-         url('../fonts/lato-reg-webfont.ttf') format('truetype'),
-         url('../fonts/lato-reg-webfont.svg#latoregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'latobold';
-    src: url('../fonts/lato-bol-webfont.eot');
-    src: url('../fonts/lato-bol-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/lato-bol-webfont.woff') format('woff'),
-         url('../fonts/lato-bol-webfont.ttf') format('truetype'),
-         url('../fonts/lato-bol-webfont.svg#latobold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'CrimsonText';
+    src: url('../fonts/CrimsonText-Italic.ttf');
+    src: local('CrimsonText'), url('../fonts/CrimsonText-Italic.ttf');
 }
 
 article {
@@ -39,7 +23,7 @@ article {
 }
 
 article header {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     padding-bottom: 0.5em;
     background: url("../images/title_bg.png") bottom left repeat-x;
 }
@@ -58,12 +42,12 @@ article header time {
 }
 
 h1.title-link {
-    font-family: "latobold","Verdana",sans-serif;
+    font-family: 'CrimsonText', serif;
     font-weight: normal;
 }
 
 h1.title {
-    font-family: "latobold", "Verdana", sans-serif;
+    font-family: 'CrimsonText', serif;
     font-weight: normal;
 }
 

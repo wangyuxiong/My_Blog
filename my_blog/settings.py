@@ -61,7 +61,7 @@ STATIC_ROOT = choose_settings.STATIC_ROOT
 STATIC_URL = choose_settings.STATIC_URL
 
 # Additional locations of static files
-STATICFILES_DIRS = choose_settings.STATICFILES_DIRS
+# STATICFILES_DIRS = choose_settings.STATICFILES_DIRS
 # Put strings here, like "/home/html/static" or "C:/www/django/static".
 # Always use forward slashes, even on Windows.
 # Don't forget to use absolute paths, not relative paths.
@@ -91,10 +91,17 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # cache entire site
-    'django.middleware.cache.UpdateCacheMiddleware',
-    'django.middleware.cache.FetchFromCacheMiddleware',
 )
+
+if 'CACHES' in dir(choose_settings):
+    CACHES = choose_settings.CACHES
+
+if 'MIDDLEWARE_CLASSES_ADDITION_FIRST' in dir(choose_settings):
+    MIDDLEWARE_CLASSES = choose_settings.MIDDLEWARE_CLASSES_ADDITION_FIRST \
+                        + MIDDLEWARE_CLASSES
+
+if 'MIDDLEWARE_CLASSES_ADDITION_LAST' in dir(choose_settings):
+    MIDDLEWARE_CLASSES += choose_settings.MIDDLEWARE_CLASSES_ADDITION_LAST
 
 ROOT_URLCONF = 'my_blog.urls'
 
@@ -117,11 +124,11 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
-    # 'south',
-    'css3two_blog',    
+    'css3two_blog',
     'taggit',
     'mytemplatetags',
     'contact_form',
+    #"compressor",
 )
 
 
@@ -156,9 +163,9 @@ LOGGING = {
 
 import platform
 pc = platform.node()
-if pc != 'metaboy' and pc != 'metaboy-MacBook-Pro.local':
+if pc != 'dell-PC' and pc != 'laike9m.local':
     EMAIL_USE_TLS = True
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_PORT = 587
     EMAIL_HOST_USER = 'yxiong.wang@gmail.com'
-    EMAIL_HOST_PASSWORD = os.environ["EMAIL_HOST_PASSWORD"]
+    EMAIL_HOST_PASSWORD = 'wangyuxiong5457'

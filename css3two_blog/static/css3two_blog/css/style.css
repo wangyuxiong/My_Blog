@@ -5,6 +5,18 @@
 }
 
 @font-face {
+    font-family: 'Alegreya';
+    src: url('../fonts/Alegreya-Regular.ttf');
+    src: local('Alegreya'), url('../fonts/Alegreya-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('../fonts/AlegreyaSans-Italic.ttf');
+    src: local('Alegreya Sans'), url('../fonts/AlegreyaSans-Italic.ttf');
+}
+
+@font-face {
     font-family: 'pt_sans';
     src: url('../fonts/pts55f-webfont.eot');
     src: url('../fonts/pts55f-webfont.eot?#iefix') format('embedded-opentype'),
@@ -237,7 +249,7 @@ nav {
     color: #7A7A68;
 }
   
-.sidebar h3, {
+.sidebar h3 {
     padding: 5px 15px 20px 15px;
     font: 250% 'Yanone Kaffeesatz';
     text-shadow:  #ffffff 1px 1px;
@@ -592,7 +604,7 @@ ul#nav li a:hover,ul#nav li a:focus {
 }
 
 .bio .illustration {
-    width: 148px;
+    width: 160px;
     margin: 15px 0 15px 0;
     padding-left: 19%;
 }
@@ -633,4 +645,11 @@ span.alignright.toggle-sidebar:after {
     border-right: 1px solid #e0e0e0;
     content: "\00bb";   /* >> */
     text-indent: -1px;
+}
+
+#hi {
+    font-family: 'Alegreya Sans', serif;
+    font-weight: normal;
+    font-size: 2em;
+    text-rendering: OptimizeLegibility;
 }

@@ -7,12 +7,17 @@
          url('../fonts/droidsans-webfont.svg#droid_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+  font-family: 'Merriweather';
+  src: url('../fonts/Merriweather-Regular.ttf');
+  src: local('Merriweather'), url('../fonts/Merriweather-Regular.ttf');
 }
 
 body {
-  font-family: "Hiragino Sans GB", "冬青黑体简体中文", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体",
-'droid_sansregular', arial, sans-serif;
+  font-family: "Merriweather", "冬青黑体简体中文", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体",
+'droid_sansregular', arial, serif;
   font-size: 14px;
   line-height: 1.6;
   /*padding-top: 10px;
@@ -60,8 +65,8 @@ p code, li code {   /* from Paul Irish's blog */
     font-weight: bold;
     display: inline-block;
     background: #f0f0f0;
-    font-size: .8em;
-    line-height: 1.5em;
+    font-size: .7em;
+    line-height: 1.2em;
     color: #2F4F4F;
     border: 1px solid #ddd;
     -webkit-border-radius: .4em;
@@ -71,6 +76,10 @@ p code, li code {   /* from Paul Irish's blog */
     border-radius: .2em;
     padding: 0 .3em;
     margin: -1px 0;
+}
+
+p a code {
+  color: #4183C4
 }
 
 h1 tt, h1 code {
@@ -92,7 +101,7 @@ h6 tt, h6 code {
   font-size: inherit; }
  
 h1 {
-  font-size: 28px;
+  font-size: 30px;
   color: black; }
  
 h2 {
@@ -112,8 +121,9 @@ h6 {
   color: #777777;
   font-size: 14px; }
  
-p, blockquote, ul, ol, dl, li, pre {
-  margin: 3px 0; }
+p, blockquote, ul, ol, dl, li {
+  margin: 3px 0;
+}
 
 hr {
   background: transparent url("../images/dirty-shade.png") repeat-x 0 0;
@@ -177,13 +187,18 @@ dl {
       margin-bottom: 0; }
  
 blockquote {
-  border-left: 4px solid #dddddd;
-  padding: 0 15px;
-  color: #777777; }
-  blockquote > :first-child {
-    margin-top: 0; }
-  blockquote > :last-child {
-    margin-bottom: 0; }
+  border-left: 6px solid #dddddd;
+  padding: 0 1.6em;
+  color: #777777;
+}
+
+blockquote > :first-child {
+    margin-top: 0;
+}
+
+blockquote > :last-child {
+    margin-bottom: 0;
+}
  
 table {
   padding: 0; }
@@ -308,6 +323,10 @@ pre {
   padding-left: 10px;
   border-radius: 3px;
   font-family: monaco, consolas;
+}
+
+li>pre:last-child {
+    margin-bottom: 30px;
 }
 
 pre code, pre tt {
@@ -694,8 +713,28 @@ kbd {
 }
 
 article p:not(.meta) {
-    font-size: 18px;
-    line-height: 36px;
-    padding-bottom: 24px;
+    font-size: 16px;
+    line-height: 180%;
+    margin: 17px 0 16px 0;
+    padding: 0;
 }
 
+article p:not(.meta)>li {
+    font-size: 17px;
+    line-height: 36px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+article blockquote>p:not(.meta) {
+    padding-bottom: 0;
+}
+
+article blockquote {
+    margin-bottom: 1em;
+    margin-top: 0.8em;
+}
+
+article li > p:first-child {
+    padding-top: 0;
+}

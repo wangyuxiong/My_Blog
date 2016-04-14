@@ -59,6 +59,7 @@ class BlogPost(models.Model):
     slug = models.SlugField(max_length=200, blank=True)
     html_file = models.FileField(upload_to=get_html_name, blank=True)    # generated html file
     category = models.CharField(max_length=30, choices=CATEGORY_CHOICES)
+    description = models.TextField(blank=True)
     tags = TaggableManager()
 
     def __str__(self):

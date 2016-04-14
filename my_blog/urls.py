@@ -14,7 +14,7 @@ urlpatterns = patterns(
 
     # admin 
     url(r'^admin/', include(admin.site.urls)),
-    
+    url(r'^referral/', 'my_blog.views.referral')
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'my_blog.views.handler404'
