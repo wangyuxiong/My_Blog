@@ -24,7 +24,8 @@
             <a href="{{ blogpost.get_absolute_url }}"><b>{{ blogpost.title }}</b></a>
           </h1>
         </header>
-        {{ blogpost.display_html }}
+        {{ blogpost.display_detail }}
+       <h4><a href="{{ blogpost.get_absolute_url }}">阅读更多...</a></h4>
       </article>
     {% endautoescape %}
 {% endfor %}

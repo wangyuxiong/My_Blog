@@ -99,6 +99,13 @@ class BlogPost(models.Model):
         with open(self.html_file.path, encoding='utf-8') as f:
             return f.read()
 
+    # 首页只展示 description，全文输出不合适
+    def display_detail(self):
+        if self.description != "":
+            return self.description
+        else:
+            return self.body[0:200]
+
     def get_absolute_url(self):
         return reverse('css3two_blog.views.blogpost', kwargs={'slug': self.slug, 'post_id': self.id})
 
