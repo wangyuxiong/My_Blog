@@ -95,7 +95,7 @@ logto           = /home/metaboy/uwsgi.log
 
 - **创建一个Upstart job**:  `[File: /etc/init/uwsgi.conf]`
 ```
-`env DJANGO_DB_PASSWORD=
+env DJANGO_DB_PASSWORD=
 env EMAIL_HOST_PASSWORD=
 env LC_ALL=en_US.UTF-8
 env LANG=en_US.UTF-8
