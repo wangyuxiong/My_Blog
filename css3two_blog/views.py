@@ -45,6 +45,14 @@ def archive(request):
         posts_by_year = sorted(posts_by_year.items(), reverse=True)  # [('2014',post_list), ('2013',post_list)]
         return posts_by_year
 
+    def get_sorted_posts_by_month():
+        posts_by_month = defaultdict(list)
+        for post in blogposts:
+            month = str(post.pub_date.year) + "-" + str(post.pub_date.month)
+            posts_by_month[month].append(post)
+        posts_by_month = sorted(posts_by_month.items())
+        return posts_by_month
+
     args['data'] = [
         ('programming', get_sorted_posts(category="programming")),
         ('work', get_sorted_posts(category="work")),
@@ -52,6 +60,8 @@ def archive(request):
         ('read', get_sorted_posts(category="read")),
         ('nc', get_sorted_posts(category="nc")),  # no category
     ]
+
+    args['posts_by_month'] = get_sorted_posts_by_month()
 
     return render(request, 'css3two_blog/archive.html', args)
 
