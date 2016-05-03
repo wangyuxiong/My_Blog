@@ -171,8 +171,8 @@ server {
 
 ---- 
 
-按照上面部署，接着就可以通过链接 [blog.wangyuxiong.com][3]进行访问了。
+按照上面部署，接着就可以通过链接 [www.wangyuxiong.com][3]进行访问了。
 
 [1]:	https://github.com/wangyuxiong/My_Blog
 [2]:	https://www.linode.com/docs/websites/nginx/deploy-django-applications-using-uwsgi-and-nginx-on-ubuntu-14-04
-[3]:	blog.wangyuxiong.com
+[3]:	www.wangyuxiong.com
