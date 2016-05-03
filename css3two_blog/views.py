@@ -104,3 +104,21 @@ def article(request, freshness):
             raise Http404
     else:
         return redirect('/')
+
+
+def category(request, cg_name):
+    args = dict()
+    posts_by_category = defaultdict(list)
+    blogposts = BlogPost.objects.exclude(title__in=exclude_posts)
+    posts_of_a_category = blogposts.filter(category=cg_name)  # already sorted by pub_date
+
+    for post in posts_of_a_category:
+        posts_by_category[cg_name].append(post)
+
+    posts_by_category = sorted(posts_by_category.items())
+
+    args['posts_by_category'] = posts_by_category
+    args['count'] = len(posts_by_category)
+    args['cg_name'] = cg_name
+
+    return render(request, 'css3two_blog/category.html', args)

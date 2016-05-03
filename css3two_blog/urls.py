@@ -10,6 +10,7 @@ urlpatterns = patterns(
     url('^about/$', views.about),
     url('^projects/$', views.projects),
     url('^talks/$', views.talks),
+    url('^category/(?P<cg_name>.*)/$', views.category),
     url('^contact/', include('contact_form.urls')),
     url('^article/(?P<freshness>.*)/$', views.article),
     url('^rss/$', BlogPostFeed()),
