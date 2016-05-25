@@ -14,7 +14,8 @@ exclude_posts = ("about", "projects", "talks")
 def home(request, page=''):
     args = dict()
     args['blogposts'] = BlogPost.objects.exclude(title__in=exclude_posts)
-    max_page = ceil(len(args['blogposts']) / 3)
+    size_page = 8
+    max_page = ceil(len(args['blogposts']) / size_page)
     if page and int(page) < 2:  # /0, /1 -> /
         return redirect("/")
     else:
@@ -23,7 +24,7 @@ def home(request, page=''):
         args['prev_page'] = page + 1 if page < max_page else None
         args['newer_page'] = page - 1 if page > 1 else None
         # as template slice filter, syntax: list|slice:"start:end"
-        args['sl'] = str(3 * (page - 1)) + ':' + str(3 * (page - 1) + 3)
+        args['sl'] = str(size_page * (page - 1)) + ':' + str(size_page * (page - 1) + size_page)
         return render(request, 'css3two_blog/index.html', args)
 
 
