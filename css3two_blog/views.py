@@ -86,6 +86,8 @@ def talks(request):
     args = {"talks": the_talks_post}
     return render(request, 'css3two_blog/talks.html', args)
 
+def sitemap(request):
+    return render(request,'css3two_blog/sitemap.html',None)
 
 def contact(request):
     html = "<meta http-equiv=\"refresh\" content=\"3;url=" \

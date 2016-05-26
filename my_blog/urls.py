@@ -11,6 +11,7 @@ urlpatterns = patterns(
     url(r'^(?P<page>\d*)/$', 'css3two_blog.views.home'),
     url(r'^$', 'css3two_blog.views.home'),
     url(r'^blog/', include('css3two_blog.urls')),
+    url('^sitemap/$', 'css3two_blog.views.sitemap'),
 
     # admin 
     url(r'^admin/', include(admin.site.urls)),
