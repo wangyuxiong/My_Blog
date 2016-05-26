@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.wangyuxiong.com/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/archive/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/about/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/contact/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/part1-dockerji-ben-zhi-shi-chu-bei,8/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/ji-yu-idea-da-jian-de-gokai-fa-huan-jing,7/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/docker-macping-tai-kai-fa-huan-jing-da-jian,6/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/bo-ke-qian-yi-ji-lu,4/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/macgong-zuo-ruan-jian-tui-jian-iterm-zsh-tmux,3/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/a-li-yun-shu-ju-shi-ye-bu-gong-cheng-sheng-chan-li-tuan-dui-zhao-pin,2/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/la-lian-biao-de-jian-dan-jie-shao,9/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/ru-he-zhi-ding-ce-shi-ji-hua,10/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/rss/</loc>
+  <lastmod>2016-05-24T15:07:41+00:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/category/work/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/category/programming/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/category/life/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/category/read/</loc>
+  <changefreq>always</changefreq>
+</url>
+</urlset>
