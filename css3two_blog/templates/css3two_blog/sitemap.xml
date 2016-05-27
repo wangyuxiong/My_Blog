@@ -8,75 +8,75 @@
 
 <url>
   <loc>http://www.wangyuxiong.com/</loc>
-  <changefreq>always</changefreq>
 </url>
 <url>
   <loc>http://www.wangyuxiong.com/blog/</loc>
-  <changefreq>always</changefreq>
 </url>
 <url>
   <loc>http://www.wangyuxiong.com/blog/archive/</loc>
-  <changefreq>always</changefreq>
 </url>
 <url>
   <loc>http://www.wangyuxiong.com/blog/about/</loc>
-  <changefreq>always</changefreq>
 </url>
 <url>
   <loc>http://www.wangyuxiong.com/blog/contact/</loc>
-  <changefreq>always</changefreq>
 </url>
 <url>
   <loc>http://www.wangyuxiong.com/blog/part1-dockerji-ben-zhi-shi-chu-bei,8/</loc>
-  <changefreq>always</changefreq>
 </url>
 <url>
   <loc>http://www.wangyuxiong.com/blog/ji-yu-idea-da-jian-de-gokai-fa-huan-jing,7/</loc>
-  <changefreq>always</changefreq>
 </url>
 <url>
   <loc>http://www.wangyuxiong.com/blog/docker-macping-tai-kai-fa-huan-jing-da-jian,6/</loc>
-  <changefreq>always</changefreq>
 </url>
 <url>
   <loc>http://www.wangyuxiong.com/blog/bo-ke-qian-yi-ji-lu,4/</loc>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://www.wangyuxiong.com/blog/macgong-zuo-ruan-jian-tui-jian-iterm-zsh-tmux,3/</loc>
-  <changefreq>always</changefreq>
 </url>
 <url>
   <loc>http://www.wangyuxiong.com/blog/a-li-yun-shu-ju-shi-ye-bu-gong-cheng-sheng-chan-li-tuan-dui-zhao-pin,2/</loc>
-  <changefreq>always</changefreq>
 </url>
 <url>
-  <loc>http://www.wangyuxiong.com/blog/la-lian-biao-de-jian-dan-jie-shao,9/</loc>
-  <changefreq>always</changefreq>
+  <loc>http://www.wangyuxiong.com/blog/pythonchu-li-mysqlde-xin-fang-an,12/</loc>
 </url>
 <url>
-  <loc>http://www.wangyuxiong.com/blog/ru-he-zhi-ding-ce-shi-ji-hua,10/</loc>
-  <changefreq>always</changefreq>
+  <loc>http://www.wangyuxiong.com/blog/yi-ge-mysql-connectionyi-chang-chu-li-mysql-error-2049,11/</loc>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/macgong-zuo-ruan-jian-tui-jian-iterm-zsh-tmux,3/</loc>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/2/</loc>
 </url>
 <url>
   <loc>http://www.wangyuxiong.com/blog/rss/</loc>
   <lastmod>2016-05-24T15:07:41+00:00</lastmod>
-  <changefreq>always</changefreq>
 </url>
 <url>
   <loc>http://www.wangyuxiong.com/blog/category/work/</loc>
-  <changefreq>always</changefreq>
 </url>
 <url>
   <loc>http://www.wangyuxiong.com/blog/category/programming/</loc>
-  <changefreq>always</changefreq>
 </url>
 <url>
   <loc>http://www.wangyuxiong.com/blog/category/life/</loc>
-  <changefreq>always</changefreq>
 </url>
 <url>
   <loc>http://www.wangyuxiong.com/blog/category/read/</loc>
-  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/sitemap/</loc>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/la-lian-biao-de-jian-dan-jie-shao,9/</loc>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/ru-he-zhi-ding-ce-shi-ji-hua,10/</loc>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/a-li-ba-ba-xin-ren-chuan-jiang-zong-jie,13/</loc>
+</url>
+<url>
+  <loc>http://www.wangyuxiong.com/blog/guan-yu-zi-cha-xun-he-lian-jie-de-qu-wei-xiao-ti-mu,14/</loc>
 </url>
 </urlset>
