@@ -163,9 +163,9 @@ LOGGING = {
 
 import platform
 pc = platform.node()
-if pc != 'dell-PC' and pc != 'laike9m.local':
+if pc != 'dell-PC' and pc != 'metaboy.local':
     EMAIL_USE_TLS = True
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_PORT = 587
     EMAIL_HOST_USER = 'yxiong.wang@gmail.com'
-    EMAIL_HOST_PASSWORD = 'wangyuxiong5457'
+    EMAIL_HOST_PASSWORD = '11111111111111'
