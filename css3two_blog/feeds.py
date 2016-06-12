@@ -24,9 +24,9 @@ class ExtendedRssFeed(Rss201rev2Feed):
 
 class BlogPostFeed(Feed):
     feed_type = ExtendedRssFeed
-    title = "laike9m's blog"
+    title = "metaboy's blog"
     link = "/blog/rss"
-    description = "Update on laike9m blog's articles."
+    description = "Update on metaboy blog's articles."
 
     def items(self):
         return BlogPost.objects.exclude(title__in=exclude_posts)[:5]
@@ -49,5 +49,5 @@ class BlogPostFeed(Feed):
     def item_content_encoded(self, item):
         import re
         html = item.display_html()
-        html = re.sub(r"/media/", r"http://laike9m.com/media/", html)
+        html = re.sub(r"/media/", r"http://www.wangyuxiong.com/media/", html)
         return html
