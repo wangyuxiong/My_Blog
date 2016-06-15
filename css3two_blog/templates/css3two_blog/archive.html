@@ -10,66 +10,8 @@
   <script type="text/javascript">
     //alert("{{ blogpost.display_html|truncatewords:'50' }}");
   </script>
-{#  {% for year, posts_by_year in data %}#}
-{#    <article role="article">#}
-{#      <header id="category">#}
-{#        <h2 class="entry-title">#}
-{#          {% if category == "programming" %}#}
-{#            Programming-test#}
-{#          {% elif category == "work" %}#}
-{#            Working#}
-{#          {% elif category == "life" %}#}
-{#            Life#}
-{#          {% elif category == "read" %}#}
-{#            Read#}
-{#          {% else %}#}
-{#            No Category#}
-{#          {% endif %}#}
-{#        </h2>#}
-{#      </header>#}
-{#      <div id="blog-archives">#}
-{#        {% for year, blogposts in posts_by_year %}#}
-{#          <h3>{{year}}</h3>#}
-{#          {% for blogpost in blogposts %}#}
-{#            <article>#}
-{#              <h1>#}
-{#                <a href="{{ blogpost.get_absolute_url }}">{{ blogpost.title }}</a>#}
-{#              </h1>#}
-{#              <time datetime="{{ blogpost.pub_date }}">#}
-{#                <span class="month">{{ blogpost.pub_date|date:"M"|upper }}</span>#}
-{#                <span class="day">{{ blogpost.pub_date.day }}</span>#}
-{#              </time>#}
-{#              <footer>#}
-{#                <span class="tags">#}
-{#                  posted in#}
-{#                  {% for tag in blogpost.tags.all %}#}
-{#                    {{ tag.name }},#}
-{#                  {% endfor %}#}
-{#                </span>#}
-{#              </footer>#}
-{#            </article>#}
-{#          {% endfor %}#}
-{#        {% endfor %}#}
-{#      </div>#}
-{#    </article>#}
-{#  {% endfor %}#}
 
     <article role="article">
-{#      <header id="category">#}
-{#        <h2 class="entry-title">#}
-{#          {% if category == "programming" %}#}
-{#            Programming-test#}
-{#          {% elif category == "work" %}#}
-{#            Working#}
-{#          {% elif category == "life" %}#}
-{#            Life#}
-{#          {% elif category == "read" %}#}
-{#            Read#}
-{#          {% else %}#}
-{#            No Category#}
-{#          {% endif %}#}
-{#        </h2>#}
-{#      </header>#}
       <div id="blog-archives">
         {% for month, blogposts in posts_by_month %}
           <h3>{{month}}</h3>
@@ -86,7 +28,7 @@
                 <span class="tags">
                   posted in
                   {% for tag in blogpost.tags.all %}
-                    {{ tag.name }},
+                    {{ tag.name }}
                   {% endfor %}
                 </span>
               </footer>
