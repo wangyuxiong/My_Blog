@@ -14,7 +14,7 @@ exclude_posts = ("about", "projects", "talks")
 def home(request, page=''):
     args = dict()
     args['blogposts'] = BlogPost.objects.exclude(title__in=exclude_posts)
-    size_page = 8
+    size_page = 10
     max_page = ceil(len(args['blogposts']) / size_page)
     if page and int(page) < 2:  # /0, /1 -> /
         return redirect("/")

@@ -14,9 +14,9 @@
 
     <article role="article">
       <div id="blog-archives">
-          <h3><strong>{{cg_name}}</strong>({{ count }})</h3>
           {% for cg_name, blogposts in posts_by_category %}
-            {% for blogpost in blogposts %}
+            <h3><strong>{{cg_name}}</strong>({{ blogposts|length }} 篇文章)</h3>
+              {% for blogpost in blogposts %}
             <article>
               <h1>
                 <a href="{{ blogpost.get_absolute_url }}">{{ blogpost.title }}</a>
