@@ -13,7 +13,7 @@
 
     <article role="article">
       <div id="blog-archives">
-        {% for month, blogposts in posts_by_month %}
+        {% for month, blogposts in posts_by_month reversed%}
           <h3>{{month}}</h3>
           {% for blogpost in blogposts %}
             <article>
