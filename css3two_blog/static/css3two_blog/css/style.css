@@ -165,7 +165,7 @@ ol li {
 }
 
 #main, #logo, #site_content, footer { 
-  max-width: 1200px;
+  max-width: 100%;
   overflow: hidden;
   margin: 0px auto;
 }
@@ -177,7 +177,7 @@ body>div>header {
 }
 
 #logo {
-  width: 1000px;
+  width: 90%;
   height: 200px;
   background: transparent url(../images/logo.png) no-repeat right;
   color: #888;

@@ -16,10 +16,11 @@
 }
 
 body {
-  font-family: "Merriweather", "冬青黑体简体中文", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体",
-'droid_sansregular', arial, serif;
-  font-size: 14px;
-  line-height: 1.6;
+  /*font-family: "Merriweather", "冬青黑体简体中文", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体",*/
+/*'droid_sansregular', arial, serif;*/
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
   /*padding-top: 10px;
   padding-bottom: 10px;
   background-color: white;
@@ -101,25 +102,25 @@ h6 tt, h6 code {
   font-size: inherit; }
  
 h1 {
-  font-size: 30px;
-  color: black; }
- 
-h2 {
   font-size: 24px;
   color: black; }
  
-h3 {
-  font-size: 18px; }
+h2 {
+  font-size: 20px;
+  color: black; }
  
-h4 {
+h3 {
   font-size: 16px; }
  
-h5 {
+h4 {
   font-size: 14px; }
+ 
+h5 {
+  font-size: 12px; }
  
 h6 {
   color: #777777;
-  font-size: 14px; }
+  font-size: 12px; }
  
 p, blockquote, ul, ol, dl, li {
   margin: 3px 0;
